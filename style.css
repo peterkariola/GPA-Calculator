@@ -1,0 +1,880 @@
+:root{
+    --primary-color: #23bde7;
+    --secondary-color: rgb(173, 230, 247, 0.29);
+    --paragraph-color: #526E75;
+    --white: #FFFFFF;
+    --menu-color: #454545;
+    --h1-font-size: 52px;
+    --section-title: 45px;
+    --font-family-menu: ;
+    --h1-color: rgb(24, 24, 24);
+    --goals-title-section: #bebebe;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Rubik', sans-serif;
+    color: var(--paragraph-color);
+}
+
+img{
+    width: 400px;
+}
+
+header{
+    background-color: var(--secondary-color);
+    padding: 43px 0px;
+    width: 100%;
+}
+
+.menu-section, .hero-section, .gpa-calculator-div, .goals, .footer-parent{
+    width: 80vw;
+    margin: 0px auto;
+}
+
+.menu-section  ul  li{
+    list-style-type: none;
+    display: inline-block;
+    margin:9px;
+    color: #081721;
+}
+nav{
+    margin-left: 290px;
+}
+.menu-section ul li:hover{
+    cursor: pointer;
+    opacity: .5;
+}
+section.menu-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.perm-color-text{
+    color: var(--primary-color);
+    font-weight: 800;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+
+.btn{
+    background-color: var(--primary-color);
+    padding: 10px 41px;
+    border: none;
+    border-radius: 4px;
+    color: var(--white);
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn:hover{
+    background-color: var(--primary-color);
+    opacity: .75;
+    cursor: pointer;
+}
+
+.hero-section{
+    margin-top: 50px;
+}
+
+section.hero-section{
+    display: flex;
+    /* gap: 20px;*/
+    justify-content: space-between;
+}
+
+.left-hero-section{
+    width: 573px;
+    align-self: center;
+}
+
+h1{
+    font-size: 52px;
+    line-height: 54.5px;
+    letter-spacing: -0.5px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    color: var(--h1-color);
+}
+
+p{
+    font-size: 15px;
+    width: 404px;
+    color: var(--paragraph-color);
+}
+
+svg{
+    height: 15px;
+    width: 19px;
+}
+
+.btn-hero-1{
+    margin-top: 20px;
+}
+.btn-hero-2{
+    background-color: var(--white);
+    color: var(--paragraph-color);
+    margin-left: 12px;
+    position: relative;
+    text-align: center;
+    padding: 10px 70px 10px 47px;
+}
+
+.btn-hero-2:hover{
+    color: white;
+    /* fill: white; */
+      
+}
+
+.btn-hero-2 svg{
+    position: absolute;
+    top: 12px;
+    left: 134px;
+}
+
+.svg-learn-more:hover *{
+    fill: white;
+}
+
+.student-testimonial-container{
+    display: flex;
+    display: inline-block;
+    width: 163px;
+}
+
+.student-testimonial-container img{
+    border-radius: 700px;
+    width: 45px;
+    height: 50px;
+}
+.student-testimonial-2, .student-testimonial-3, .student-testimonial-4, .student-testimonial-5{
+    margin-left: -20px;
+}
+
+.student-container{
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    gap: 9px;
+}
+
+.right-hero-section img{
+    height: 600px;
+    width: 500px;
+}
+
+.student-testimonial-text{
+    font-size: 12px;
+    position: relative;
+}
+
+.student-testimonial-text svg{
+    position: absolute;
+    top: 7px;
+    left: 240px;
+}
+
+h2{
+    font-size: 36px;
+    line-height: 54.5px;
+    letter-spacing: -0.5px;
+    font-weight: 700;
+    color: var(--h1-color);
+    text-align: center; 
+    margin-top: 90px;
+}
+
+.break-title{
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+.partners-img{
+    width: 300px;
+    height: 300px;
+}
+.partners-images-container{
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 300px;
+    justify-content: center;
+    align-content: center;
+    column-gap: 20px;
+    row-gap: 60px;
+
+}
+
+.partners-img-3{
+    width: 427px;
+    align-self: center;
+    justify-self: center;
+}
+
+
+.btn-gpa-calc-section{
+    margin:-47px auto 0  auto;
+    width: 387.163px;
+    display: block;
+    
+}
+
+.btn-gpa-calc-reset{
+background-color: RED;
+}
+
+.btn-gpa-calc-reset:hover{
+ background-color: red;
+ 
+}
+
+.gpa-calculator-section{
+    background-color: var(--secondary-color);
+    padding-bottom:80px ;
+}
+
+
+.svg-partners{
+    width: 25px;
+    height: 25px;
+    margin: 0 auto 75px auto;
+    display: block;
+}
+.section-divider-title{
+    padding-top: 70px;
+
+}
+
+.gpa-form{
+    display: grid;
+    grid-template-columns: 171px 171px 191px;
+    grid-template-rows: 40px 40px;
+    align-content: center;
+    justify-content: center;
+    margin-top: 100px;
+    column-gap: 45px;
+    row-gap: 35px;
+    padding-bottom: 20px;
+}
+
+.academic-session-gpa-calc, .semester-gpa-calc{
+    border-radius: 3px 8px 3px 8px;
+}
+
+.name-gpa-calc, .institution-gpa-calc{
+    border-radius: 8px 3px 8px 3px;
+}
+
+.form-gpa-calc{
+    border:  .1px solid var(--primary-color);
+    text-align: center;
+    font-size: 12px;
+    position: relative;
+    background-position-x: 244px;
+    
+}
+
+.academic-session-gpa-calc{
+    grid-column: 2 / 3;
+}
+
+/* .form-gpa-calc::after{
+    width: 0; 
+ height: 0; 
+ border-left: 6px solid transparent;
+border-right: 6px solid transparent;
+border-top: 6px solid #f00;
+position: absolute;
+top: 49%;
+right: 5px;
+content: "";
+z-index: 98;
+} */
+
+   table {
+border-collapse: collapse;
+border: 1px solid #23bde7;
+width: 745.912px;
+margin: 0 auto;
+margin-top: 50px;
+}
+
+
+.gpa-calc-table th,tr,td{
+border-right: 1px solid #23bde7;
+border-bottom: 1px solid #23bde7;
+text-align: center;
+}
+
+.gpa-calc-table td:nth-child(2){
+background-color:white;
+width: 227px;
+}
+
+.gpa-calc-table td:nth-child(1), td:nth-child(3){
+/* background-color:rgb(173, 230, 247, 0.29); */
+width: 297px;
+}
+
+table input{
+    margin: 10px 0;
+    padding: 10px;
+    text-align: center;
+}
+
+td:nth-child(1) input, td:nth-child(3) input{
+    border-radius: 20px;
+    background-color: rgba(250, 250, 250, 0.48);
+    border: 2px solid rgb(174, 216, 277);
+}
+
+td:nth-child(1) input:focus:valid,  td:nth-child(3) input:focus:valid{
+outline: none !important;
+border:3px solid var(--paragraph-color);
+
+}
+
+td:nth-child(2) input:focus:valid{
+outline: none !important;
+border:3px solid var(--primary-color);
+
+}
+
+.btn-gpa-calc-submit{
+    width: 190.788px;
+    /* margin: 70px auto 0 auto; */
+    display: block;
+    
+    
+}
+
+.your-gpa{
+    background-color:var(--white);
+    width: 743.900px;
+    margin: 37px  auto;
+    padding: 20px 15px;
+    
+}
+
+.see-your-gpa{
+    background-color: var(--secondary-color);
+    border: 2px solid var(--primary-color);
+    /* text-align: center; */
+    padding: 5px 7px;
+    margin: 0 auto;
+    width: 100%;
+    font-size: 20px;
+}
+
+.gpa{
+    color:rgb(44, 221, 58);
+    margin-left: 380px;
+    font-size: 30px;
+}
+
+.btn-reset-container{
+    display: flex;
+    align-items: center;
+    gap: 19px; 
+    margin: 70px auto 0 auto;
+    justify-content: center;
+}
+
+.btn-gpa-calc-reset{
+    width: 191px;
+    opacity: 0.15;
+}
+.btn-gpa-calc-reset:hover{
+    opacity: 0.15;
+}
+
+.gpa-success-alert-texts{
+    width: 440px;
+    text-align: center;
+    line-height: 28.1px;
+    height: 100%;
+    background-color: white;
+    border-radius: 21px 0px 0px 21px;
+    padding: 0 20px;
+    box-shadow: 0 4px 20px rgb(69 69 69 / 35%);
+    position: relative;
+}
+
+.gpa-checker-p2, .gpa-checker-p1{
+    padding-top: 15px;
+    margin: 0 auto;
+}
+
+.gpa-checker-p1{
+    margin-top: 77px;
+}
+ 
+  
+
+.overlay-container, .overlay-container-guide{
+    background-color: rgba(0,0,0,0.4);
+    position: fixed;
+    z-index: 10000;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.gpa-success-alert{
+    display: flex;
+    margin: 0 auto;
+    /* background-color: rgb(192, 182, 182); */
+    height: 350px;
+    width: 910px;
+    /* gap: 40px; */
+    position: relative;
+    /* box-shadow: 0 1px 6px rgba(57,73,76,0.35); */
+}
+
+.info-guide-container{
+    height: 600px
+}
+
+.info-guide-alert-texts{
+    padding: 30px;
+    width: 600px
+}
+   
+.gpa-checker-name{
+    font-weight: 700;
+}
+
+.gpa-checker-school, .uni-type-info{
+    text-transform: uppercase;
+    color: var(--primary-color);
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.gpa-alert-display{
+    color: rgb(44, 221, 58);
+    font-size: 32px;
+    font-weight: 800;
+}
+
+.gpa-checker-honor{
+    color: rgb(255, 0, 0);
+    font-size: 20px;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.grade-full-info{
+    font-size: 19px;
+    color: rgb(44, 221, 58);
+}
+
+.svg-close{
+    position: absolute;
+    top: 23px;
+    right: -414px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.svg-close:hover, .svg-menu-close:hover, .svg-menu-open:hover, .svg-close-info-guide:hover .svg-close-uni-info:hover{
+    opacity: 0.4;
+    cursor: pointer;
+}
+
+
+ aside img{
+    width: 440px;
+    height: 100%;
+    border-radius: 0px 21px 21px 0px;
+    box-shadow: 0 4px 20px rgb(69 69 69 / 35%);
+}
+
+aside{
+    width: 100%;
+}
+
+.display-info-gpa-select{
+    background-color: var(--white);
+    padding: 20px;
+    width: 100%;
+    border: 2.5px dotted red; 
+    display: none;
+    position: relative;
+}
+
+.display-info-gpa-select p{
+    width: 100%;
+    margin: 0 auto;
+    font-weight: 700;
+    line-height: 23px;
+    text-align: center;
+}
+
+.svg-close-uni-info{
+    position: absolute;
+    top: 3px;
+    right: 8px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.svg-close-info-guide{
+    right: -414px;
+    position: absolute;
+    top: 8px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+
+.number-title-goals-section{
+    color: var(--goals-title-section);
+    font-size: 58px;
+    text-align: justify;
+    margin: 0;
+}
+
+.goals img{
+    width: 400px;
+    height: 520px;
+} 
+
+.left-hero{
+    align-self: center;
+}
+.goals-container-1 {
+    display: grid;
+    grid-template-columns: 2fr auto ;
+}
+
+.goals-container-2 {
+    display: grid;
+    grid-template-columns: 2fr auto ;
+}
+
+.goals-container-3 {
+    display: grid;
+    grid-template-columns: 2fr auto ;
+}
+
+.goals p{
+    width: 45vw; 
+}
+
+.goals-container-2{
+    column-gap: 100px;
+}
+
+.goals h3{
+    width: 600px;
+    font-size: 30px;
+    color: rgb(37, 37, 37);
+    padding: 10px 0;
+}
+
+.gaol-section-grid{
+    display: grid;
+    gap: 230px;
+    padding-bottom: 120px;
+}
+
+.left-hero-2{
+    grid-column: 2 /3;
+}
+
+.right-hero-2{
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+ 
+.footer-parent{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    margin: 0 auto;
+}
+
+footer{
+    background-color: var(--secondary-color);
+    height: 80px;
+}
+
+/* Mobile & Tablet Views*/
+@media only screen and (max-width: 1298px){
+h1{
+  width: 432px;
+  font-size: 45.5px;
+  line-height: 51px;
+}
+.your-gpa{
+   width: 100%;
+}
+.gpa{
+   margin-left: 58%;
+}
+.goals img{
+ width: 100%;
+}
+.list-menu-container{
+    
+    border-top: 1px solid rgb(43 126 149 / 10%);
+}
+.individual-mobile-menu{
+    padding: 20px 0px;
+    list-style-type: none;
+}
+.list-menu-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mobile-menu-list{
+   width: 95%;
+   margin: 0 auto;
+}
+
+.logo-mobile-menu{
+    margin: 0 auto;
+    width: 70px;
+    padding: 19px 0 19px 0;
+}
+.mobile-menu{
+   background-color: var(--primary-color);
+   color: var(--white);
+   width: 100%;
+   height: 100%;
+   position: fixed;
+   z-index: 8888888888;
+   display: none;
+}
+.logo-focus-mobile-menu{
+    color: var(--white);
+}
+.menu-flex{
+   display: flex;
+   align-items: center;
+}
+.svg-menu-close{
+   height: 39px;
+}
+
+}
+
+@media only screen and (max-width: 1146px) {
+.header-btn, .nav-menu {
+display: none;
+}
+.svg-menu-open{
+   display: inline-block !important;
+   height: 30px;
+   width: 30px;
+}
+
+.goals-container-2 .right-hero-2{
+   padding-bottom: 14px;
+}
+
+h1{
+  width: 390px;
+  font-size: 33.5px;
+  line-height: 33px;
+}
+.right-hero-section img{
+   height: 558px;
+   width: 387px;
+}
+.partners-images-container{
+    grid-template-columns: 220px 220px 220px;
+    grid-template-rows: 250px;
+    row-gap: 67PX;
+    column-gap: 45px;
+}
+.partners-img {
+    width: 228px;
+    height: 167px;
+}
+.partners-img-3{
+    width: 300px;
+    align-self: start;
+}
+
+
+
+}
+
+@media only screen and (max-width: 1055px){
+    .hero-section{
+   flex-direction: column;
+}
+.left-hero-section{
+   align-self: normal;
+   margin-bottom: 40px;
+   width: 100%;
+}
+h2{
+   font-size: 26px;
+}
+
+.right-hero-section img{
+   height: 100%;
+   width: 100%;
+}
+h1{
+   text-align: center;
+   margin: 0 auto;
+   width: 95%;
+}
+
+.hero-paragraph{
+   margin: 0 auto;
+   text-align: center;
+   padding: 20px 15px;
+   
+}
+.btn-hero-container{
+width:345px;
+margin: 0 auto;
+}
+.student-container{
+   justify-content: center;
+}
+
+.btn-hero-2{
+padding: 10px 39px 10px 29px;
+}
+.btn-hero-1{
+padding: 10px 16px;
+}
+.btn-hero-2 svg{
+left:120px
+}
+
+.goals-container-1, .goals-container-3, .goals-container-2{
+   grid-template-columns: 2fr;
+   column-gap: 0px;
+}
+
+.left-hero-2{
+   grid-column: initial;
+}
+
+.right-hero{
+   margin-top: 25px;
+}
+
+}
+
+@media only screen and (max-width: 964px){
+.partners-images-container{
+    grid-template-columns: 200px 200px;
+    grid-template-rows: 183px;
+    row-gap: 67PX;
+    column-gap: 45px;
+}
+.partners-img {
+    width: 228px;
+    height: 167px;
+}
+.partners-img-3{
+    width: 427px;
+}
+
+.gpa-form{
+   grid-template-columns:  171px 171px
+}
+.goals p{
+    font-size: 12px;
+    width: 80vw;
+}
+.goals h3{
+    width: 95%;
+}
+
+.gpa-success-alert{
+    flex-direction: column;
+}
+
+.info-guide-alert-texts, .gpa-success-alert-texts {
+padding: 30px;
+width: 55%;
+margin: 0 auto;
+width: 56%;
+border-radius: 21px 21px 21px 21px;
+}
+/* .gpa-success-alert-texts{
+width: 56%;
+border-radius: 21px 21px 21px 21px;
+} */
+.gpa-success-alert-img img{
+  display: none;
+}
+.info-guide-alert-texts p{
+    width: 100%;
+}
+
+.svg-close{
+    right: 28px;
+    width: 20px;
+}
+.svg-close-info-guide {
+    top: 13px;
+    right: 25px;
+}
+
+.gpa-checker-p1, .gpa-checker-p2 {
+margin-top: 22px;
+width: 100%;
+}
+.gpa-success-alert-1{
+    height: 452px;
+}
+
+} 
+
+@media only screen and (max-width: 560px){
+.partners-images-container{
+    grid-template-columns: 170px 170px;
+    grid-template-rows: 183px;
+    row-gap: 67PX;
+    column-gap: 45px;
+}  
+ .partners-img {
+    width: 170px;
+    height: 167px;
+}
+
+.partners-img-3{
+    width: 300px;
+}
+
+.student-testimonial-container {
+    display: flex;
+    display: inline-block;
+    width: 111px;
+}
+
+.student-testimonial-container img {
+    border-radius: 672px;
+    width: 35px;
+    height: 39px;
+}
+
+}
