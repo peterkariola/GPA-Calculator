@@ -18,6 +18,7 @@
         let GpaInfoSelect = document.querySelector('.display-info-gpa-select')
         let uniTypeInfo = document.querySelector('.uni-type-info')
         let GradeScaleInfo= document.querySelector('.grade-scale')
+        let errorLog= document.querySelector('.error-log')
         let gradeFullScaleInfo = document.querySelector('.grade-full-info')
         let totalSum = 0;
         let totalCourseUnit = 0; 
@@ -176,7 +177,11 @@
         btnCalcGpa.addEventListener('click', function(event){
             event.preventDefault();
             console.log(institution.options[institution.selectedIndex].value)
+            if(institution.options[institution.selectedIndex].value === 'noschool'){
+                console.log('You entered the wrong school my Oga')
+                errorLog.style.display = 'block'
 
+            }
             //  GPA Clculation of Instituions with 5.0 grading SYstem
             
              if (uniFivePointZero()){
@@ -395,6 +400,7 @@
         btnCalcGpa.style.opacity='1'
         btnReset.disabled = true;
         btnReset.style.opacity='0.1'
+        errorLog.style.display = 'none'
         })
       
         // Modal Close for popups
