@@ -126,7 +126,7 @@
                 institution.options[institution.selectedIndex].value === 'futa' || institution.options[institution.selectedIndex].value === 'bowen' ||
                 institution.options[institution.selectedIndex].value === 'babcock' || institution.options[institution.selectedIndex].value === 'fuoye' || 
                 institution.options[institution.selectedIndex].value === 'delsu' || institution.options[institution.selectedIndex].value === 'lautech' || 
-                institution.options[institution.selectedIndex].value === 'eksu' 
+                institution.options[institution.selectedIndex].value === 'eksu' || institution.options[institution.selectedIndex].value === 'unical'
              return x;
     }
 
