@@ -179,7 +179,7 @@ svg{
 .student-testimonial-text svg{
     position: absolute;
     top: 7px;
-    left: 240px;
+    left: 251px;
 }
 
 h2{
@@ -616,6 +616,10 @@ footer{
     height: 80px;
 }
 
+.logo a{
+    color: inherit;
+    text-decoration: none;
+}
 /* Mobile & Tablet Views*/
 @media only screen and (max-width: 1298px){
 h1{
@@ -877,4 +881,52 @@ width: 100%;
     height: 39px;
 }
 
+}
+
+@media only screen and (max-width: 540px){
+    .hero-paragraph{
+        width: 100%;
+    }
+    svg.svg-learn-more {
+        left: 75%;
+    }
+    a.btn.btn-hero-1 {
+        display: block;
+        width: 96%;
+        margin: 16px auto;
+        text-align: center;
+    }
+    .btn-hero-container {
+        width: 100%;
+    }
+    a.btn.btn-hero-2 {
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .student-testimonial-4, .student-testimonial-5, .student-testimonial-3{
+        display: none;
+    }
+    .student-testimonial-container img{
+        width: 29px;
+    }
+    .student-testimonial-container {
+        width: 55px;
+    }
+    .perm-color-text{
+        font-size: 19px;
+    }
+    .student-testimonial-text svg {
+        left: 100%;
+    }
+    .partners-images-container {
+        grid-template-columns: 170px 
+    }
+    .gpa {
+        margin-left: 5%;
+    }
+    .btn-gpa-calc-section {
+        width: 100%;
+        text-align: center;
+    }
 }

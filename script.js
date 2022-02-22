@@ -20,7 +20,7 @@
         let GradeScaleInfo= document.querySelector('.grade-scale')
         let gradeFullScaleInfo = document.querySelector('.grade-full-info')
         let totalSum = 0;
-        let totalCourseUnit = 0;
+        let totalCourseUnit = 0; 
         let gpaValue = document.querySelector('.gpa')
         let overlay = document.querySelector('.overlay-container') 
         let overlayContainerGuides = document.querySelector('.overlay-container-guide')
@@ -124,7 +124,8 @@
                 || institution.options[institution.selectedIndex].value === 'run' || institution.options[institution.selectedIndex].value === 'cu' ||
                 institution.options[institution.selectedIndex].value === 'futa' || institution.options[institution.selectedIndex].value === 'bowen' ||
                 institution.options[institution.selectedIndex].value === 'babcock' || institution.options[institution.selectedIndex].value === 'fuoye' || 
-                institution.options[institution.selectedIndex].value === 'delsu'
+                institution.options[institution.selectedIndex].value === 'delsu' || institution.options[institution.selectedIndex].value === 'lautech' || 
+                institution.options[institution.selectedIndex].value === 'eksu' 
              return x;
     }
 
@@ -367,7 +368,7 @@
     
              console.log(Number(gpaAlertDisplay.textContent))
 
-            //  Honor Decoder without proper knowledge of Hoisting
+            //  Honor Decoder 
              if (uniFivePointZero()){
                 honorDecoder(1.49, 1.50, 2.49, 2.50, 3.49, 3.50, 4.49, 4.50, 5.0)
              }
