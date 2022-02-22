@@ -888,7 +888,7 @@ width: 100%;
         width: 100%;
     }
     svg.svg-learn-more {
-        left: 75%;
+        left: 66%;
     }
     a.btn.btn-hero-1 {
         display: block;
@@ -901,7 +901,7 @@ width: 100%;
     }
     a.btn.btn-hero-2 {
         display: block;
-        width: 100%;
+        width: 97%;
         margin: 0 auto;
     }
     .student-testimonial-4, .student-testimonial-5, .student-testimonial-3{
@@ -929,4 +929,27 @@ width: 100%;
         width: 100%;
         text-align: center;
     }
+    .student-container{
+        display: none;
+    }
+    .btn-reset-container{
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 420px){
+    .gpa-form{
+        grid-template-columns: 93px 87px;
+        column-gap: 17px;
+    }
+    
+    .partners-img-3 {
+    width: 100%;
+    }
+}
+
+@media only screen and (max-width: 294px){
+svg.svg-learn-more {
+    left: 74%;
+}
 }
